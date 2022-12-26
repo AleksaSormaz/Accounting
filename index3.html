@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="/Slike/ikona.jpg" type="image/icon">
+    <script src="/JS/jquery-3.6.0.js"></script>
+    <title>Prijava</title>
+    <style>
+        legend {
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get" class="form-control-lg" style="width:70%;margin:auto;" id="formular" onsubmit=""
+        novalidate>
+        <fieldset class="form-group">
+            <legend>Lični podaci</legend>
+
+            <label for="ime">Vaše ime:</label>
+            <input type="text" name="ime" id="name" class="form-control" required>
+
+            <label for="prezime">Vaše prezime:</label>
+            <input type="text" name="prezime" id="surname" class="form-control" required>
+
+            <label for="telefon">Mobilni telefon:</label>
+            <input type="tel" name="telefon" class="form-control" id="tel" required>
+
+            <label for="mail">Vaša e-mail adresa:</label>
+            <input type="email" name="mail" id="mail" class="form-control" required>
+
+            <label for="naziv_firme">Naziv firme:</label>
+            <input type="text" name="naziv_firme" id="company_name" class="form-control" required>
+
+            <label for="pib">PIB firme:</label>
+            <input type="text" name="pib" class="form-control" id="pib" required>
+        </fieldset>
+
+        <input type="submit" name="submit" value="Pošalji" />
+        <input type="reset" name="reset" value="Obriši" />
+    </form>
+    <script src="/JS/provere.js"></script>
+</body>
+
+</html>
